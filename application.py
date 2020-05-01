@@ -8,6 +8,7 @@ def index():
 
 @app.route("/<string:name>")
 def hello(name):
+  name = name.capitalize()
   return f"Hello, {name}!"
 
 #So if you go to the default route which just ends in a /

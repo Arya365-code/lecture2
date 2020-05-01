@@ -9,7 +9,7 @@ def index():
 @app.route("/<string:name>")
 def hello(name):
   name = name.capitalize()
-  return f"Hello, {name}!"
+  return f"<h1>Hello, {name}!<h1>"
 
 #So if you go to the default route which just ends in a /
 #the page will show "Hello, world!". But if you add '/name'

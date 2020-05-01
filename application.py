@@ -5,3 +5,16 @@ app = Flask(__name__)
 @app.route("/")
 def index():
   return "Hello, world!"
+
+@app.route("/david")
+def david():
+  return "Hello, David!"
+
+@app.route("/maria")
+def maria():
+  return "Hello, Maria!"
+
+#So if you go to the default route which just ends in a /
+#the page will show "Hello, world!". But if you add '/david'
+#or '/maria' to the end of the URL it will show the respective
+#messages.
